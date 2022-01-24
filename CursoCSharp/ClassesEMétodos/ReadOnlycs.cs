@@ -7,7 +7,7 @@ namespace CursoCSharp.ClassesEMétodos
     public class Cliente
     {
         public string Nome;
-        readonly DateTime Nascimento; //não é possível fazer alteração no valor
+        readonly DateTime Nascimento;
 
         public Cliente(string nome, DateTime nascimento)
         {

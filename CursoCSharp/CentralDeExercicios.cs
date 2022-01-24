@@ -46,6 +46,24 @@ namespace CursoCSharp {
 
                 Console.WriteLine(e.StackTrace);
             }
+
+            Console.WriteLine("Digite 0 para voltar e 1 para sair.");
+            var retorno = Console.ReadLine();
+
+            if (!string.IsNullOrEmpty(retorno))
+            {
+                switch (retorno)
+                {
+                    case "1":
+                        System.Environment.Exit(0);
+                        break;
+                    case "0":
+                        SelecionarEExecutar();
+                        break;
+                    default:
+                        break;
+                }
+            }
         }
     }
 }
